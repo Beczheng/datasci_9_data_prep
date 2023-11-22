@@ -1,4 +1,4 @@
-year,borough,neighborhood_uhf,sex,race_ethnicity,total_number_of_hiv_diagnoses,hiv_diagnoses_per_100000_population,total_number_of_concurrent_hiv_aids_diagnoses,proportion_of_concurrent_hiv_aids_diagnoses_among_all_hiv_diagnoses,total_number_of_aids_diagnoses,aids_diagnoses_per_100000_population
+year,borough,neighborhood,sex,race_and_ethnicity,total_number_of_hiv_diagnoses,hiv_diagnoses_per_100000,total_number_of_concurrent_hiv_aids_diagnoses,proportion_of_concurrent_hiv_aids_diagnoses_among_all_hiv_diagnoses,total_number_of_aids_diagnoses,aids_diagnoses_per_100000
 0.0,0.0,0.0,0.0,0.0,2235,31.2,367,16.4,1390,19.4
 0.0,0.0,0.0,0.0,1.0,145,13.8,32,22.1,52,5.0
 0.0,0.0,0.0,0.0,2.0,933,58.4,171,18.3,668,41.8
