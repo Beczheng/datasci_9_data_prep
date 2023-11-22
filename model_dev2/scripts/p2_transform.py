@@ -10,7 +10,6 @@ df.columns
 
 # Cleaning the column names
 df.columns = df.columns.str.lower().str.replace(' ', '_').str.replace('-', '_').str.replace('/', '_').str.replace('(', '').str.replace(')', '').str.replace('.', '').str.replace(',', '')
-df.columns
 
 # Keeping columns
 to_keep = [
@@ -45,6 +44,7 @@ enc = OrdinalEncoder()
 enc.fit(df[['year']])
 df['year'] = enc.transform(df[['year']])
 
+# Creating a dataframe with mapping for year
 df_mapping_date = pd.DataFrame(enc.categories_[0], columns=['year'])
 df_mapping_date['year_ordinal'] = df_mapping_date.index
 df_mapping_date
@@ -57,6 +57,7 @@ enc = OrdinalEncoder()
 enc.fit(df[['borough']])
 df['borough'] = enc.transform(df[['borough']])
 
+# Creating a dataframe with mapping for borough
 df_mapping_date = pd.DataFrame(enc.categories_[0], columns=['borough'])
 df_mapping_date['borough_ordinal'] = df_mapping_date.index
 df_mapping_date
@@ -69,6 +70,7 @@ enc = OrdinalEncoder()
 enc.fit(df[['neighborhood_uhf']])
 df['neighborhood_uhf'] = enc.transform(df[['neighborhood_uhf']])
 
+# Creating a dataframe with mapping for neighborhood_uhf
 df_mapping_date = pd.DataFrame(enc.categories_[0], columns=['neighborhood_uhf'])
 df_mapping_date['neighborhood_uhf_ordinal'] = df_mapping_date.index
 df_mapping_date
@@ -81,6 +83,7 @@ enc = OrdinalEncoder()
 enc.fit(df[['sex']])
 df['sex'] = enc.transform(df[['sex']])
 
+# Creating a dataframe with mapping for sex
 df_mapping_date = pd.DataFrame(enc.categories_[0], columns=['sex'])
 df_mapping_date['sex_ordinal'] = df_mapping_date.index
 df_mapping_date
@@ -93,6 +96,7 @@ enc = OrdinalEncoder()
 enc.fit(df[['race_ethnicity']])
 df['race_ethnicity'] = enc.transform(df[['race_ethnicity']])
 
+# Creating a dataframe with mapping for race_ethnicity
 df_mapping_date = pd.DataFrame(enc.categories_[0], columns=['race_ethnicity'])
 df_mapping_date['race_ethnicity_ordinal'] = df_mapping_date.index
 df_mapping_date
