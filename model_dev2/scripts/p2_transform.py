@@ -30,7 +30,7 @@ to_keep = [
 df = df[to_keep]
 df.dropna(inplace=True)
 
-# Getting the data type
+# Getting the data type of the columns
 df.dtypes 
 
 # Changing data types
