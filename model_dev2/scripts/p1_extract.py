@@ -6,8 +6,8 @@ datalink = 'https://data.cityofnewyork.us/api/views/ykvb-493p/rows.csv?accessTyp
 df = pd.read_csv(datalink)
 df.size
 
-# Saving as CSV file to model_dev2/data/raw
+# Saving as a CSV file to model_dev2/data/raw
 df.to_csv('model_dev2/data/raw/HIV_AIDS_data.csv', index=False)
 
-# Saving as Pickle file to model_dev2/data/raw
+# Saving as a Pickle file to model_dev2/data/raw
 df.to_pickle('model_dev2/data/raw/HIV_AIDS_data.pkl')

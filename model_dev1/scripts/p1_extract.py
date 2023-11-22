@@ -6,8 +6,8 @@ datalink = 'https://data.cdc.gov/api/views/w9j2-ggv5/rows.csv?accessType=DOWNLOA
 df = pd.read_csv(datalink)
 print(df)
 
-# Saving as CSV file to model_dev1/data/raw
+# Saving as a CSV file to model_dev1/data/raw
 df.to_csv('model_dev1/data/raw/death_rate_life_expectancy_data.csv', index=False)
 
-# Saving as Pickle file to model_dev1/data/raw
+# Saving as a Pickle file to model_dev1/data/raw
 df.to_pickle('model_dev1/data/raw/death_rate_life_expectancy_data.pkl')
