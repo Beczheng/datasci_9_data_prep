@@ -1,7 +1,7 @@
 import pandas as pd 
 from sklearn.preprocessing import OrdinalEncoder
 
-# Getting the raw dataset
+# Loading the raw dataset
 df = pd.read_pickle('model_dev2/data/raw/HIV_AIDS_data.pkl')
 print(df)
 

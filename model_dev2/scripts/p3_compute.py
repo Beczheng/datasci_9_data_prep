@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 # Indepdent (predictors): All other variables
 # Dependent (target): Proportion_of_concurrent_hiv_aids_diagnoses_among_all_hiv_diagnoses
 
-# Getting the processed dataset
+# Loading the processed dataset
 df = pd.read_csv('model_dev2/data/processed/processed_HIV_AIDS_data.csv')
 print(df)
 

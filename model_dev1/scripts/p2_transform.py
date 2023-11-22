@@ -1,7 +1,7 @@
 import pandas as pd 
 from sklearn.preprocessing import OrdinalEncoder
 
-# Getting the raw dataset
+# Loading the raw dataset
 df = pd.read_pickle('model_dev1/data/raw/death_rate_life_expectancy_data.pkl')
 print(df)
 

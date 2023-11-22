@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 # Indepdent (predictors): All other variables
 # Dependent (target): Age_adjusted_death_rate
 
-# Getting the processed dataset
+# Loading the processed dataset
 df = pd.read_csv('model_dev1/data/processed/processed_death_rate_life_expectancy_data.csv')
 print(df)
 
