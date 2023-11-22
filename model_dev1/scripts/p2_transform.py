@@ -12,10 +12,7 @@ df.columns
 df.columns = df.columns.str.lower().str.replace(' ', '_').str.replace('-', '_').str.replace('(', '').str.replace(')', '')
 df.columns
 
-# Getting the data type
-df.dtypes 
-
-# Keeping columns
+# Keeping columns 
 to_keep = [
     'year',
     'race',
@@ -24,8 +21,12 @@ to_keep = [
     'age_adjusted_death_rate'
 ]
 
+# Dropping missing values
 df = df[to_keep]
 df.dropna(inplace=True)
+
+# Getting the data type
+df.dtypes 
 
 # Performing ordinal encoding on year
 enc = OrdinalEncoder()
@@ -63,5 +64,5 @@ df_mapping_date
 # Saving the mapping as a CSV for race
 df_mapping_date.to_csv('model_dev1/data/processed/mapping_race.csv', index=False)
 
-# Saving the mapping as a CSV for both sex and race
+# Saving the entire mapping as a CSV
 df.to_csv('model_dev1/data/processed/processed_death_rate_life_expectancy_data.csv', index=False)
